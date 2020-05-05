@@ -8,8 +8,9 @@ function init() {
   const output = document.getElementById('output');
   input.addEventListener('keyup', (e) => {
     new Promise((res, rej) => {
-      const body = parse(e.target.value).body;
-      res(new Interpreter(body));
+      //const body = parse(e.target.value).body;
+      //res(new Interpreter(body));
+      res(eval(e.target.value));
     }).then((body) => {
       output.textContent = body;
     }).catch((e) => {

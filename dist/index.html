@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Minimal Compiler</title>
-    <script type="module" src="index.js"></script>
+    <script src="main.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+        App.init();
+      });
+    </script>
+  <footer>
+  </footer>
   </head>
   <body>
     <div style="display: flex; justify-content: center;">
